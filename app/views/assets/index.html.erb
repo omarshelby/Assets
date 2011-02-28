@@ -1,0 +1,46 @@
+<div class="headerposition">
+</div>
+
+<% title "Assets" %>
+
+<% if flash[:notice] %>
+<p style="color:green;">
+<%= flash[:notice]%>
+</p>
+<% end%>
+
+<p><%= link_to("Login", login_path) unless logged_in? %></p>
+
+<% if logged_in? %>
+<p><%= link_to "New Asset", new_asset_path %> |
+  <%= link_to 'Logout', logout_path %></p>
+<% end %>
+
+<table border="1">
+  <tr>
+    <th>Purchase Order Number</th>
+    <th>Request Number</th>
+    <th>Order Date</th>
+    <th>Location</th>
+    <th>Description</th>
+  </tr>
+
+  <% for asset in @assets do %>
+    <tr>
+      <td><%= h link_to "#{asset.Purchase_Order_Number}", asset %></td>
+      
+      <td><%=h asset.Request_Number %></td>
+      <td><%=h asset.Order_Date %></td>
+      <td><%=h asset.Location %></td>
+      <td><%=h asset.Description %></td>
+      
+    </tr>
+  <% end %>
+
+</table>
+
+<br>
+
+<%= will_paginate @posts %>
+
+</div>

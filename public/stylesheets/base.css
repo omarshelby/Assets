@@ -1,0 +1,238 @@
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+text-decoration: none;
+}
+del {
+text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+
+
+
+
+
+body 
+{
+background-color: #D0DC66;
+}
+
+h1 
+{
+font-family: Arial, Helvetica, Sans-serif;
+color: #000000;
+font-size: 14px;
+padding: 0px;
+}
+
+h2 
+{
+font-family: Arial, Helvetica, Sans-serif;
+color: #D70000;
+font-size: 12px;
+padding: 0px;
+}
+
+h3 
+{
+font-family: Arial, Helvetica, Sans-serif;
+color: #000000;
+font-size: 12px;
+padding: 0px;
+}
+
+
+p 
+{
+font-family: Arial;
+color: #000000;
+font-size: 18px;
+padding: 0px;
+}
+
+
+
+div.headerposition
+{
+background:url(./images/header.gif) no-repeat;
+position: absolute;
+top:0%;
+left:10px;
+width:100%;
+height:100%;
+}
+
+
+div.loginposition
+{
+background:url(./images/login.gif) no-repeat;
+position: relative;
+top:150px;
+left:0px;
+width:100%;
+height:100%;
+}
+
+
+div.input
+{
+position:absolute;
+top: 240px;
+left: 470px;
+width:100%;
+height: 100%;
+}
+
+
+span.enter
+{
+background:url(./images/enter.gif) no-repeat;
+position:absolute;
+top:350px;
+left:485px;
+width: 50px;
+height:40px;
+}
+
+
+div.contentposition
+{
+
+background:url(./images/content.gif) no-repeat; 
+position:relative;
+margin-top:150px;
+margin-left:10px;
+width:100%;
+height:100%;
+}
+
+
+span.assets
+{
+position: absolute;
+top: 20px;
+left: 28px;
+width: 5%;
+}
+
+span.new
+{
+position: absolute;
+top:20px;
+left: 155px;
+width: 5%;
+}
+
+span.logout
+{
+position: absolute;
+top:20px;
+left: 264px;
+width: 5%;
+}
+
+
+div.order
+{
+position:absolute;
+top:84px;
+left:25px;
+width:100px;
+
+}
+
+
+div.request
+{
+position:absolute;
+top:84px;
+left:170px;
+width:20px;
+}
+
+div.date
+{
+position:absolute;
+top:84px;
+left:275px;
+width:60px;
+}
+
+div.location
+{
+position:absolute;
+top:84px;
+left:400px;
+width:100%;
+}
+
+div.description
+{
+position:absolute;
+top:84px;
+left:500px;
+width:100%;
+}
+
+div.ShowEdit
+{
+position:absolute;
+top:145px;
+left: 850px;
+width:100%;
+}
+
+div.ResetSubmit
+{
+position:absolute;
+top: 570px;
+left: 770px;
+width: 100%;
+}
+
+

@@ -1,0 +1,35 @@
+<div class="headerposition">
+</div>
+
+<% title "Asset" %>
+
+<p><%= link_to("Login", login_path) unless logged_in? %></p>
+
+<p>
+  <strong>Purchase Order Number:</strong>
+  <%=h @asset.Purchase_Order_Number %>
+</p>
+<p>
+  <strong>Request Number:</strong>
+  <%=h @asset.Request_Number %>
+</p>
+<p>
+  <strong>Order Date:</strong>
+  <%=h @asset.Order_Date %>
+</p>
+<p>
+  <strong>Location:</strong>
+  <%=h @asset.Location %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @asset.Description %>
+</p>
+
+<p>
+<% if logged_in? %>
+  <%= link_to "Edit", edit_asset_path(@asset) %> |
+  <%= link_to "Destroy", @asset, :confirm => 'Are you sure?', :method => :delete %> | 
+<% end %>
+  <%= link_to "View All", assets_path %>
+</p>
